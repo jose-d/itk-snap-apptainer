@@ -1,0 +1,9 @@
+Bootstrap: docker
+From: ubuntu:23.04
+
+%post
+    apt -y update
+    apt -y install curl git wget libglx0 libopengl0 libgl1 xubuntu-desktop qt5dxcb-plugin qt6-base-dev libxcb-xinerama0 libicu-dev
+
+    wget https://www.fzu.cz/~jose/install/other/itksnap-4.0.1-20230320-Linux-gcc64.tar.gz
+    tar -xvf itksnap-4.0.1-20230320-Linux-gcc64.tar.gz -C /usr/local --strip-components=1

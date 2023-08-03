@@ -1,6 +1,14 @@
 Bootstrap: docker
 From: ubuntu:{{ OSVERSION }}
 
+%labels
+    Author Josef Dvoracek
+    Version v20230803_1812
+
+%help
+    This container packs itk-snap - http://www.itksnap.org/pmwiki/pmwiki.php - software,a tool for 
+    segmenting anatomical structures in medical images. 
+
 %arguments
     OSVERSION=23.04
     ITKVERSIONSTRING=4.0.1-20230320

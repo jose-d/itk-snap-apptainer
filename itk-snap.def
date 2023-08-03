@@ -3,7 +3,7 @@ From: ubuntu:{{ OSVERSION }}
 
 %labels
     Author Josef Dvoracek
-    Version v20230803_1812
+    Version v20230803_1837
 
 %help
     This container packs itk-snap - http://www.itksnap.org/pmwiki/pmwiki.php - software,a tool for 
@@ -17,7 +17,7 @@ From: ubuntu:{{ OSVERSION }}
 
 %post
     apt -y update
-    apt -y install curl git wget libglx0 libopengl0 libgl1 xubuntu-desktop qt5dxcb-plugin qt6-base-dev libxcb-xinerama0 libicu-dev
+    apt -y install apt -y install curl git wget libglx0 libopengl0 libgl1 qt5dxcb-plugin libxcb-xinerama0 libicu-dev
 
     wget {{ ITKBASEURL }}/itksnap-{{ ITKVERSIONSTRING }}-Linux-gcc64.tar.gz
     tar -xvf itksnap-{{ ITKVERSIONSTRING }}-Linux-gcc64.tar.gz -C /usr/local --strip-components=1

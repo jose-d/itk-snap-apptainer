@@ -13,3 +13,6 @@ From: ubuntu:{{ OSVERSION }}
 
     wget {{ ITKBASEURL }}/itksnap-{{ ITKVERSIONSTRING }}-Linux-gcc64.tar.gz
     tar -xvf itksnap-{{ ITKVERSIONSTRING }}-Linux-gcc64.tar.gz -C /usr/local --strip-components=1
+
+%runscript
+    /usr/local/bin/itksnap

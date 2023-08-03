@@ -4,7 +4,7 @@ ITK-SNAP software in apptainer
 ## Build
 
 ```
-apt -y install curl git wget libglx0 libopengl0 libgl1 qt5dxcb-plugin libxcb-xinerama0 libicu-dev
+apptainer build ./itk-snap.sif ./itk-snap.def
 ```
 
 ## Start app

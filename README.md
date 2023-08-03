@@ -1,5 +1,5 @@
 # itk-snap-apptainer
-ITK-SNAP software in apptainer
+ITK-SNAP (http://www.itksnap.org/pmwiki/pmwiki.php, sourceforge: https://sourceforge.net/projects/itk-snap/ ) software in apptainer
 
 ## Build
 

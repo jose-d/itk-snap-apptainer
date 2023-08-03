@@ -15,3 +15,6 @@ just run
 ```
 to start GUI.
 All app binaries are in PATH.
+
+
+Tested on Rocky Linux 8, apptainer-1.2.2-1.x86_64.
